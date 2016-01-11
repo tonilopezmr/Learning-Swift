@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E249F5851C441238006D971E /* controlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249F5841C441238006D971E /* controlFlow.swift */; };
 		E29C790E1C42AFBE0041AC61 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C790D1C42AFBE0041AC61 /* main.swift */; };
 		E29C79171C42B4B80041AC61 /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C79161C42B4B80041AC61 /* strings.swift */; };
 		E29C79191C42B57F0041AC61 /* arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C79181C42B57F0041AC61 /* arrays.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E249F5841C441238006D971E /* controlFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controlFlow.swift; sourceTree = "<group>"; };
 		E29C790A1C42AFBE0041AC61 /* Learning-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29C790D1C42AFBE0041AC61 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E29C79161C42B4B80041AC61 /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				E29C79161C42B4B80041AC61 /* strings.swift */,
 				E29C79181C42B57F0041AC61 /* arrays.swift */,
 				E29C791A1C42B9B20041AC61 /* looping.swift */,
+				E249F5841C441238006D971E /* controlFlow.swift */,
 			);
 			path = "Learning-Swift";
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29C791B1C42B9B20041AC61 /* looping.swift in Sources */,
+				E249F5851C441238006D971E /* controlFlow.swift in Sources */,
 				E29C79171C42B4B80041AC61 /* strings.swift in Sources */,
 				E29C790E1C42AFBE0041AC61 /* main.swift in Sources */,
 				E29C79191C42B57F0041AC61 /* arrays.swift in Sources */,
@@ -251,6 +255,7 @@
 				E29C79131C42AFBE0041AC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

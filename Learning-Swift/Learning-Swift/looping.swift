@@ -40,6 +40,8 @@ class LoopingExample {
         for number in 0...10 {
             print(number)
         }
+        
+        indexLoopExample()
     }
     
     func printDownloading(cont: Int){
@@ -48,5 +50,23 @@ class LoopingExample {
             downloadingMessage += "."
         }
         print(downloadingMessage)
+    }
+    
+    func indexLoopExample(){
+        //Use ..< to make a range that omits its upper value, and use ... to make a range that includes both values.
+        
+        var firstForLoop = 0
+        for i in 0..<4 {
+            print("")
+            firstForLoop = i
+        }
+        print(firstForLoop)
+        
+        var secondForLoop = 0
+        for i in 0...4 {
+            secondForLoop = i
+        }
+        print(secondForLoop)
+        
     }
 }

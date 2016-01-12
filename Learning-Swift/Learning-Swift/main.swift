@@ -14,9 +14,12 @@ import Foundation
 //let arrayExample = ArrayExample()
 //arrayExample.example()
 
-let loopingExample = LoopingExample()
-loopingExample.example()
+//let loopingExample = LoopingExample()
+//loopingExample.example()
 
 
 //let controlFlow = ControlFlowExample()
 //controlFlow.example()
+
+let functions = FunctionExample()
+functions.example()

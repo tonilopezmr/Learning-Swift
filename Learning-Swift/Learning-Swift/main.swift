@@ -21,5 +21,9 @@ import Foundation
 //let controlFlow = ControlFlowExample()
 //controlFlow.example()
 
-let functions = FunctionExample()
-functions.example()
+//let functions = FunctionExample()
+//functions.example()
+
+let square = Square(sideLength: 10, name: "Square")
+print(square.area())
+print(square.description())

@@ -78,4 +78,12 @@ class FunctionExample{
     func double(number: Int) -> Int {
         return number*2
     }
+    
+    func sum(numbers: Int...) -> [Int] {
+        var list = [Int]()
+        for number in numbers{
+            list += [double(number)]
+        }
+        return list
+    }
 }

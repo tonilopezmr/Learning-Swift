@@ -28,7 +28,10 @@ import Foundation
 //print(square.area())
 //print(square.description())
 
-let circle = Circle(radio: 3, x: 3, y: 6)
-print(circle.area().description)
+//let circle = Circle(radio: 3, x: 3, y: 6)
+//print(circle.area().description)
 
-print(5.3.description)
+//print(5.3.description)
+
+let generics = GenericExamples()
+generics.example()

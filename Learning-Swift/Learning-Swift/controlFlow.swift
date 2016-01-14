@@ -9,7 +9,7 @@
 import Foundation
 
 
-class ControlFlowExample{
+class ControlFlowExample: ExampleProtocol{
     func example(){
         var optionalString: String? = "Hello"
         print(optionalString == nil)

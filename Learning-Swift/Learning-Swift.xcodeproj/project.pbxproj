@@ -13,6 +13,7 @@
 		E25811621C47F19000324CCD /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25811611C47F19000324CCD /* Circle.swift */; };
 		E25811641C47F46D00324CCD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25811631C47F46D00324CCD /* Extension.swift */; };
 		E25811661C4831F100324CCD /* generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25811651C4831F100324CCD /* generics.swift */; };
+		E25811681C4834B500324CCD /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25811671C4834B500324CCD /* ExampleProtocol.swift */; };
 		E29C790E1C42AFBE0041AC61 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C790D1C42AFBE0041AC61 /* main.swift */; };
 		E29C79171C42B4B80041AC61 /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C79161C42B4B80041AC61 /* strings.swift */; };
 		E29C79191C42B57F0041AC61 /* arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29C79181C42B57F0041AC61 /* arrays.swift */; };
@@ -39,6 +40,7 @@
 		E25811611C47F19000324CCD /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		E25811631C47F46D00324CCD /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E25811651C4831F100324CCD /* generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generics.swift; sourceTree = "<group>"; };
+		E25811671C4834B500324CCD /* ExampleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
 		E29C790A1C42AFBE0041AC61 /* Learning-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29C790D1C42AFBE0041AC61 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E29C79161C42B4B80041AC61 /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				E249F5841C441238006D971E /* controlFlow.swift */,
 				E2D983921C45487B0038F9E5 /* functions.swift */,
 				E25811651C4831F100324CCD /* generics.swift */,
+				E25811671C4834B500324CCD /* ExampleProtocol.swift */,
 			);
 			path = "Learning-Swift";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				E29C791B1C42B9B20041AC61 /* looping.swift in Sources */,
 				E25811601C47F12E00324CCD /* ShapeProtocol.swift in Sources */,
+				E25811681C4834B500324CCD /* ExampleProtocol.swift in Sources */,
 				E25811621C47F19000324CCD /* Circle.swift in Sources */,
 				E249F5851C441238006D971E /* controlFlow.swift in Sources */,
 				E29C79171C42B4B80041AC61 /* strings.swift in Sources */,

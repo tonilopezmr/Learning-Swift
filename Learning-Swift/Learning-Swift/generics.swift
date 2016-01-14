@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GenericExamples{
+class GenericExamples: ExampleProtocol{
     
     func example() {
         print(repeatSomeThing("All I want for christmas", numberOfThings: 4))

@@ -9,7 +9,7 @@
 import Foundation
 
 
-class FunctionExample{
+class FunctionExample: ExampleProtocol{
     func example(){
         print(sum(3, n2: 3))
         

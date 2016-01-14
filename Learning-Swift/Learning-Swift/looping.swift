@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LoopingExample {
+class LoopingExample: ExampleProtocol{
     func example(){
         print("**** Looping Examples ****")
         

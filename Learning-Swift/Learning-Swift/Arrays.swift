@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ArrayExample{
+class ArrayExample: ExampleProtocol{
     func example(){
         print("*** Array examples ****")
         

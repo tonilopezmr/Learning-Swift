@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StringExamples {
+class StringExamples: ExampleProtocol{
     func example(){    
         print("Hello, World!")
         

@@ -9,8 +9,8 @@
 import Foundation
 
 class Shape {
-    var x: Float = 0
-    var y: Float = 0
+    var x: Double = 0
+    var y: Double = 0
     var name: String
     
     init(name: String){
@@ -31,6 +31,8 @@ class Square: Shape{
         x = 10.3
         y = 20.2
     }
+    
+    
     
     func area() -> Double {
         return sideLength * sideLength

@@ -33,5 +33,5 @@ import Foundation
 
 //print(5.3.description)
 
-let generics = GenericExamples()
+let generics = ErrorHandlingExample()
 generics.example()

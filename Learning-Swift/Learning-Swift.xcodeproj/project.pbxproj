@@ -10,6 +10,8 @@
 		E206606F1C465BD5002BD440 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206606E1C465BD5002BD440 /* Objects.swift */; };
 		E22BC0461C4948A9008B64C0 /* optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BC0451C4948A9008B64C0 /* optionals.swift */; };
 		E22BC0481C494BD9008B64C0 /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BC0471C494BD9008B64C0 /* errors.swift */; };
+		E249A1FE1C4A6D3F00BF883D /* operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249A1FD1C4A6D3F00BF883D /* operations.swift */; };
+		E249A2011C4A729F00BF883D /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249A2001C4A729F00BF883D /* data.swift */; };
 		E249F5851C441238006D971E /* controlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249F5841C441238006D971E /* controlFlow.swift */; };
 		E25811601C47F12E00324CCD /* ShapeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E258115F1C47F12E00324CCD /* ShapeProtocol.swift */; };
 		E25811621C47F19000324CCD /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25811611C47F19000324CCD /* Circle.swift */; };
@@ -39,6 +41,8 @@
 		E206606E1C465BD5002BD440 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
 		E22BC0451C4948A9008B64C0 /* optionals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = optionals.swift; sourceTree = "<group>"; };
 		E22BC0471C494BD9008B64C0 /* errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = errors.swift; sourceTree = "<group>"; };
+		E249A1FD1C4A6D3F00BF883D /* operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = operations.swift; sourceTree = "<group>"; };
+		E249A2001C4A729F00BF883D /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
 		E249F5841C441238006D971E /* controlFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controlFlow.swift; sourceTree = "<group>"; };
 		E258115F1C47F12E00324CCD /* ShapeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeProtocol.swift; sourceTree = "<group>"; };
 		E25811611C47F19000324CCD /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
@@ -72,6 +76,14 @@
 			name = "Objects and Classes";
 			sourceTree = "<group>";
 		};
+		E249A1FF1C4A71DD00BF883D /* FitCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				E249A2001C4A729F00BF883D /* data.swift */,
+			);
+			name = FitCalculator;
+			sourceTree = "<group>";
+		};
 		E258115A1C47F0C500324CCD /* Protocols and Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		E29C790C1C42AFBE0041AC61 /* Learning-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E249A1FF1C4A71DD00BF883D /* FitCalculator */,
 				E258115A1C47F0C500324CCD /* Protocols and Extensions */,
 				E206606D1C465B7B002BD440 /* Objects and Classes */,
 				E29C790D1C42AFBE0041AC61 /* main.swift */,
@@ -113,6 +126,7 @@
 				E25811671C4834B500324CCD /* ExampleProtocol.swift */,
 				E22BC0451C4948A9008B64C0 /* optionals.swift */,
 				E22BC0471C494BD9008B64C0 /* errors.swift */,
+				E249A1FD1C4A6D3F00BF883D /* operations.swift */,
 			);
 			path = "Learning-Swift";
 			sourceTree = "<group>";
@@ -178,6 +192,7 @@
 				E29C791B1C42B9B20041AC61 /* looping.swift in Sources */,
 				E25811601C47F12E00324CCD /* ShapeProtocol.swift in Sources */,
 				E22BC0461C4948A9008B64C0 /* optionals.swift in Sources */,
+				E249A1FE1C4A6D3F00BF883D /* operations.swift in Sources */,
 				E25811681C4834B500324CCD /* ExampleProtocol.swift in Sources */,
 				E25811621C47F19000324CCD /* Circle.swift in Sources */,
 				E249F5851C441238006D971E /* controlFlow.swift in Sources */,
@@ -188,6 +203,7 @@
 				E206606F1C465BD5002BD440 /* Objects.swift in Sources */,
 				E2D983931C45487B0038F9E5 /* functions.swift in Sources */,
 				E25811661C4831F100324CCD /* generics.swift in Sources */,
+				E249A2011C4A729F00BF883D /* data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

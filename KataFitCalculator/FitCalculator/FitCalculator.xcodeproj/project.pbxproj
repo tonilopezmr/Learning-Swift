@@ -11,6 +11,7 @@
 		E20CB76A1C4BF05C000DAFCF /* AppServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB7691C4BF05C000DAFCF /* AppServiceLocator.swift */; };
 		E20CB76E1C4BF0D4000DAFCF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB76D1C4BF0D4000DAFCF /* Person.swift */; };
 		E20CB7711C4BF14D000DAFCF /* PersonRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB7701C4BF14D000DAFCF /* PersonRepositoryProtocol.swift */; };
+		E23103551C4E6AB500A9A552 /* PersonOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23103541C4E6AB500A9A552 /* PersonOutput.swift */; };
 		E2F37E8F1C4D748F00A5178C /* CalculateCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F37E8E1C4D748F00A5178C /* CalculateCalories.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		E20CB7691C4BF05C000DAFCF /* AppServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServiceLocator.swift; sourceTree = "<group>"; };
 		E20CB76D1C4BF0D4000DAFCF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E20CB7701C4BF14D000DAFCF /* PersonRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E23103541C4E6AB500A9A552 /* PersonOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonOutput.swift; sourceTree = "<group>"; };
 		E2F37E8E1C4D748F00A5178C /* CalculateCalories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateCalories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,21 +67,23 @@
 		E20CB7611C4BF04B000DAFCF /* FitCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				E20CB76F1C4BF13B000DAFCF /* Repository */,
+				E23103531C4E6A9A00A9A552 /* Output */,
+				E23103521C4E6A8000A9A552 /* Calculator */,
+				E20CB76F1C4BF13B000DAFCF /* Boundaries */,
 				E20CB76C1C4BF0C9000DAFCF /* Entities */,
-				E20CB76B1C4BF0B3000DAFCF /* Detail */,
+				E20CB76B1C4BF0B3000DAFCF /* UseCase */,
 				E20CB7621C4BF04B000DAFCF /* main.swift */,
 				E20CB7691C4BF05C000DAFCF /* AppServiceLocator.swift */,
 			);
 			path = FitCalculator;
 			sourceTree = "<group>";
 		};
-		E20CB76B1C4BF0B3000DAFCF /* Detail */ = {
+		E20CB76B1C4BF0B3000DAFCF /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
 				E2F37E8E1C4D748F00A5178C /* CalculateCalories.swift */,
 			);
-			name = Detail;
+			name = UseCase;
 			sourceTree = "<group>";
 		};
 		E20CB76C1C4BF0C9000DAFCF /* Entities */ = {
@@ -90,12 +94,27 @@
 			name = Entities;
 			sourceTree = "<group>";
 		};
-		E20CB76F1C4BF13B000DAFCF /* Repository */ = {
+		E20CB76F1C4BF13B000DAFCF /* Boundaries */ = {
 			isa = PBXGroup;
 			children = (
 				E20CB7701C4BF14D000DAFCF /* PersonRepositoryProtocol.swift */,
 			);
-			name = Repository;
+			name = Boundaries;
+			sourceTree = "<group>";
+		};
+		E23103521C4E6A8000A9A552 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Calculator;
+			sourceTree = "<group>";
+		};
+		E23103531C4E6A9A00A9A552 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				E23103541C4E6AB500A9A552 /* PersonOutput.swift */,
+			);
+			name = Output;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +179,7 @@
 				E20CB7711C4BF14D000DAFCF /* PersonRepositoryProtocol.swift in Sources */,
 				E2F37E8F1C4D748F00A5178C /* CalculateCalories.swift in Sources */,
 				E20CB76A1C4BF05C000DAFCF /* AppServiceLocator.swift in Sources */,
+				E23103551C4E6AB500A9A552 /* PersonOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+var pedro: String = "Pedrito"
+
+print("Hello, World! \(pedro)")
 

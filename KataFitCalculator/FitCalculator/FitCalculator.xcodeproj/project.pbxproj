@@ -13,6 +13,8 @@
 		E20CB7711C4BF14D000DAFCF /* PersonRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB7701C4BF14D000DAFCF /* PersonRepositoryProtocol.swift */; };
 		E23103551C4E6AB500A9A552 /* PersonOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23103541C4E6AB500A9A552 /* PersonOutput.swift */; };
 		E2F37E8F1C4D748F00A5178C /* CalculateCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F37E8E1C4D748F00A5178C /* CalculateCalories.swift */; };
+		E2FDC70D1C503E3E0090FF80 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDC70C1C503E3E0090FF80 /* PersonRepository.swift */; };
+		E2FDC70F1C503E910090FF80 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDC70E1C503E910090FF80 /* DataSourceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,8 @@
 		E20CB7701C4BF14D000DAFCF /* PersonRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepositoryProtocol.swift; sourceTree = "<group>"; };
 		E23103541C4E6AB500A9A552 /* PersonOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonOutput.swift; sourceTree = "<group>"; };
 		E2F37E8E1C4D748F00A5178C /* CalculateCalories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateCalories.swift; sourceTree = "<group>"; };
+		E2FDC70C1C503E3E0090FF80 /* PersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		E2FDC70E1C503E910090FF80 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		E20CB7611C4BF04B000DAFCF /* FitCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				E2FDC70B1C503E270090FF80 /* Repositories */,
 				E23103531C4E6A9A00A9A552 /* Output */,
 				E23103521C4E6A8000A9A552 /* Calculator */,
 				E20CB76F1C4BF13B000DAFCF /* Boundaries */,
@@ -115,6 +120,15 @@
 				E23103541C4E6AB500A9A552 /* PersonOutput.swift */,
 			);
 			name = Output;
+			sourceTree = "<group>";
+		};
+		E2FDC70B1C503E270090FF80 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E2FDC70C1C503E3E0090FF80 /* PersonRepository.swift */,
+				E2FDC70E1C503E910090FF80 /* DataSourceProtocol.swift */,
+			);
+			name = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +192,10 @@
 				E20CB7631C4BF04B000DAFCF /* main.swift in Sources */,
 				E20CB7711C4BF14D000DAFCF /* PersonRepositoryProtocol.swift in Sources */,
 				E2F37E8F1C4D748F00A5178C /* CalculateCalories.swift in Sources */,
+				E2FDC70F1C503E910090FF80 /* DataSourceProtocol.swift in Sources */,
 				E20CB76A1C4BF05C000DAFCF /* AppServiceLocator.swift in Sources */,
 				E23103551C4E6AB500A9A552 /* PersonOutput.swift in Sources */,
+				E2FDC70D1C503E3E0090FF80 /* PersonRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,25 @@
 
 import Foundation
 
-struct ContactOutput {
+struct ContactOutput: Ui {
+    
+    func showWelcome() {
+        print("*** Welcome to CalculateFit   *** ")
+    }
+    
+    func showError() {
+        print("Ooops! One Error!")
+    }
+    
+    func showPerson(person: Person){
+        print("\(person.name): Kg: \(person.kg)  Age: \(person.age)  height: \(person.height)")
+    }
+    
+    func showCalculateFit(kcal: Double, person: Person){
+        showPerson(<#T##person: Person##Person#>)
+        print("Needs \(kcal) kcal per day")
+    }
+    
     func getName() -> String {
         print("Name ", terminator: "")
         return readLine() ?? "Unknown"
@@ -24,8 +42,8 @@ struct ContactOutput {
         return Double(readLine()!) ?? -1
     }
     
-    func getKg() -> Double {
+    func getKg() -> Int {
         print("kg: ", terminator: "")
-        return Double(readLine()!) ?? -1
+        return Int(readLine()!) ?? -1
     }
 }

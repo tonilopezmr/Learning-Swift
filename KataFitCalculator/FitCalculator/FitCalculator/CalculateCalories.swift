@@ -11,9 +11,7 @@ import Foundation
 struct CalculateCalories {
     let personRepository: PersonRespositoryProtocol
     
-    func execute(index: Int) -> Double {
-        let person = personRepository.get(index);
-        
+    func execute(person: Person) -> Double {
         let result = Double(10*person.kg) + (6.26*person.height);
         return (result + 5) - Double(5*person.age);
     }

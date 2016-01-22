@@ -9,7 +9,13 @@
 import Foundation
 
 protocol Ui {
+    func showWelcome()
     func showError()
     func showPerson(person: Person)
-    func showCalculateFit(person: Person)
+    func showCalculateFit(kcal: Double, person: Person)
+    
+    func getName() -> String
+    func getAge() -> Int
+    func getHeight() -> Double
+    func getKg() -> Int
 }

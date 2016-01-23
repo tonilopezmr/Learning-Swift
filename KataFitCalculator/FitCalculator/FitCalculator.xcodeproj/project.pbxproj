@@ -12,6 +12,7 @@
 		E20CB76E1C4BF0D4000DAFCF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB76D1C4BF0D4000DAFCF /* Person.swift */; };
 		E20CB7711C4BF14D000DAFCF /* PersonRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20CB7701C4BF14D000DAFCF /* PersonRepositoryProtocol.swift */; };
 		E23103551C4E6AB500A9A552 /* PersonOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23103541C4E6AB500A9A552 /* PersonOutput.swift */; };
+		E27B6AB71C5381A600C8805A /* MemoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B6AB61C5381A600C8805A /* MemoryDataSource.swift */; };
 		E2CA05051C5246EF0046BF79 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA05041C5246EF0046BF79 /* Presenter.swift */; };
 		E2DCE4A31C5198B9009FEF7F /* Ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DCE4A21C5198B9009FEF7F /* Ui.swift */; };
 		E2F37E8F1C4D748F00A5178C /* CalculateCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F37E8E1C4D748F00A5178C /* CalculateCalories.swift */; };
@@ -38,6 +39,7 @@
 		E20CB76D1C4BF0D4000DAFCF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E20CB7701C4BF14D000DAFCF /* PersonRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepositoryProtocol.swift; sourceTree = "<group>"; };
 		E23103541C4E6AB500A9A552 /* PersonOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonOutput.swift; sourceTree = "<group>"; };
+		E27B6AB61C5381A600C8805A /* MemoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDataSource.swift; sourceTree = "<group>"; };
 		E2CA05041C5246EF0046BF79 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		E2DCE4A21C5198B9009FEF7F /* Ui.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ui.swift; sourceTree = "<group>"; };
 		E2F37E8E1C4D748F00A5178C /* CalculateCalories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateCalories.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				E2FDC70C1C503E3E0090FF80 /* PersonRepository.swift */,
 				E2FDC70E1C503E910090FF80 /* DataSourceProtocol.swift */,
+				E27B6AB61C5381A600C8805A /* MemoryDataSource.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				E2CA05051C5246EF0046BF79 /* Presenter.swift in Sources */,
 				E2F37E8F1C4D748F00A5178C /* CalculateCalories.swift in Sources */,
 				E2FDC70F1C503E910090FF80 /* DataSourceProtocol.swift in Sources */,
+				E27B6AB71C5381A600C8805A /* MemoryDataSource.swift in Sources */,
 				E20CB76A1C4BF05C000DAFCF /* AppServiceLocator.swift in Sources */,
 				E23103551C4E6AB500A9A552 /* PersonOutput.swift in Sources */,
 				E2FDC70D1C503E3E0090FF80 /* PersonRepository.swift in Sources */,

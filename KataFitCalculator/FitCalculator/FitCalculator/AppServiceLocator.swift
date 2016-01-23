@@ -10,6 +10,13 @@ import Foundation
 
 class AppServiceLocator {
     
+    lazy var personDataSource: MemoryDataSource<Person> = {
+        return MemoryDataSource<Person>()
+    }()
     
+    var personRespository: PersonRespositoryProtocol {
+        return PersonRepository(datasource: personDataSource)
+    }
     
+    //continue...
 }

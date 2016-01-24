@@ -8,7 +8,10 @@
 
 import Foundation
 
-var pedro: String = "Pedrito"
+let locator = AppServiceLocator()
+locator.presenter.onInitialize()
 
-print("Hello, World! \(pedro)")
-
+while true {
+    locator.presenter.onInputContact()
+    locator.presenter.onContinue()
+}

@@ -12,5 +12,5 @@ protocol Person {
     var name: String { get }
     var kg: Int { get }
     var age: Int { get }
-    var height: Double { get }
+    var height: Int { get }
 }

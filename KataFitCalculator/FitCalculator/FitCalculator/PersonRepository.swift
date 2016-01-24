@@ -12,10 +12,10 @@ struct PersonRepository<T: DataSourceProtocol where T.ItemType == Person>: Perso
     let datasource: T
     
     func add(person: Person) {
-        datasource.add(<#T##person: Person##Person#>)
+        datasource.add(person)
     }
     
     func get(index: Int) -> Person {
-        return datasource.get(<#T##index: Int##Int#>)
+        return datasource.get(index)
     }
 }

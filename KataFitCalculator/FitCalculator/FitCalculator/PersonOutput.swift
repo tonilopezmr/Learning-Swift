@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct ContactOutput: Ui {
+struct PersonOutput: Ui {
     
     func showWelcome() {
-        print("*** Welcome to CalculateFit   *** ")
+        print("\n*** Welcome to CalculateFit   *** \n")
     }
     
     func showError() {
@@ -19,11 +19,11 @@ struct ContactOutput: Ui {
     }
     
     func showPerson(person: Person){
-        print("\(person.name): Kg: \(person.kg)  Age: \(person.age)  height: \(person.height)")
+        print("\(person.name): Kg: \(person.kg)  Age: \(person.age)  height: \(person.height) cm")
     }
     
     func showCalculateFit(kcal: Double, person: Person){
-        showPerson(<#T##person: Person##Person#>)
+        showPerson(person)
         print("Needs \(kcal) kcal per day")
     }
     
@@ -37,9 +37,9 @@ struct ContactOutput: Ui {
         return Int(readLine()!) ?? -1
     }
     
-    func getHeight() -> Double{
-        print("height: ", terminator: "")
-        return Double(readLine()!) ?? -1
+    func getHeight() -> Int{
+        print("height (cm): ", terminator: "")
+        return Int(readLine()!) ?? -1
     }
     
     func getKg() -> Int {

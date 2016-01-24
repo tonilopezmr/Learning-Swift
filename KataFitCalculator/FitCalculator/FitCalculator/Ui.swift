@@ -16,6 +16,6 @@ protocol Ui {
     
     func getName() -> String
     func getAge() -> Int
-    func getHeight() -> Double
+    func getHeight() -> Int
     func getKg() -> Int
 }

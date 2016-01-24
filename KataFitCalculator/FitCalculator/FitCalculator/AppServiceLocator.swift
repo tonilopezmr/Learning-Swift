@@ -14,9 +14,19 @@ class AppServiceLocator {
         return MemoryDataSource<Person>()
     }()
     
-    var personRespository: PersonRespositoryProtocol {
+    var personRepository: PersonRespositoryProtocol {
         return PersonRepository(datasource: personDataSource)
     }
     
-    //continue...
+    var calculateCalories: CalculateCalories {
+        return CalculateCalories(personRepository: personRepository)
+    }
+    
+    var ui: Ui {
+        return PersonOutput()
+    }
+    
+    var presenter: Presenter {
+        return Presenter(ui: ui, calculateCalories: calculateCalories)
+    }
 }

@@ -16,6 +16,10 @@ struct Presenter{
         ui.showWelcome()
     }
     
+    func onContinue(){
+        ui.showWelcome()
+    }
+    
     private func isValidName(input: String) -> Bool {
         return !input.isEmpty
     }
@@ -28,11 +32,11 @@ struct Presenter{
         return input > 18
     }
     
-    private func isValidHeight(input: Double) -> Bool {
-        return input > 1.40
+    private func isValidHeight(input: Int) -> Bool {
+        return input > 140
     }
     
-    private func isPersonInfoValid(name: String, kg: Int, age: Int, height: Double) -> Bool{
+    private func isPersonInfoValid(name: String, kg: Int, age: Int, height: Int) -> Bool{
         return !isValidName(name) || !isValidKg(kg) || !isValidAge(age) || !isValidHeight(height)
     }
     
@@ -42,13 +46,13 @@ struct Presenter{
         let height = ui.getHeight()
         let age = ui.getAge()
         
-        if isPersonInfoValid(<#T##name: String##String#>, kg: <#T##Int#>, age: <#T##Int#>, height: <#T##Double#>) {
+        if isPersonInfoValid(name, kg: kg, age: age , height: height) {
             ui.showError()
             return onInputContact()
         }
         
         let person: Person = NewPerson (name: name, kg: kg, age: age, height: height)
-        let kcal: Double = calculateCalories.execute(person)
+        let kcal: Double = calculateCalories.execute(person) * 1.55
         
         ui.showCalculateFit(kcal, person: person)                
     }
@@ -58,5 +62,5 @@ struct NewPerson: Person {
     let name: String
     let kg: Int
     let age: Int
-    let height: Double
+    let height: Int
 }

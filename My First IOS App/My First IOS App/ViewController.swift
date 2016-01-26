@@ -10,8 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var button: UIButton!
+    
+    @IBOutlet var label: UILabel!
+    
+    @IBAction func onButtonClick(sender: UIButton) {
+        label.text = "I've push the button"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+         
         // Do any additional setup after loading the view, typically from a nib.
     }
 

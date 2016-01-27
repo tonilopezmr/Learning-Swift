@@ -15,12 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     
     @IBAction func onButtonClick(sender: UIButton) {
-        label.text = "I've push the button"
+        label.text = "I've touch the button"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
         // Do any additional setup after loading the view, typically from a nib.
     }
 

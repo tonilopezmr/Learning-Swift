@@ -14,6 +14,24 @@
 		E252E1121C5629690047FD08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E252E1101C5629690047FD08 /* LaunchScreen.storyboard */; };
 		E252E11D1C5629690047FD08 /* My_First_IOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252E11C1C5629690047FD08 /* My_First_IOS_AppTests.swift */; };
 		E252E1281C5629690047FD08 /* My_First_IOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252E1271C5629690047FD08 /* My_First_IOS_AppUITests.swift */; };
+		E26968BF1C5940F2001A5BA9 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968BE1C5940F2001A5BA9 /* Subject.swift */; };
+		E26968C31C59419B001A5BA9 /* GetSubjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968C21C59419B001A5BA9 /* GetSubjectList.swift */; };
+		E26968C51C5941AD001A5BA9 /* CreateSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968C41C5941AD001A5BA9 /* CreateSubject.swift */; };
+		E26968C71C5941B3001A5BA9 /* DeleteSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968C61C5941B3001A5BA9 /* DeleteSubject.swift */; };
+		E26968C91C5941BC001A5BA9 /* UpdateSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968C81C5941BC001A5BA9 /* UpdateSubject.swift */; };
+		E26968CB1C5941EA001A5BA9 /* SubjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968CA1C5941EA001A5BA9 /* SubjectRepository.swift */; };
+		E26968D01C594264001A5BA9 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968CF1C594264001A5BA9 /* DataSourceProtocol.swift */; };
+		E26968D51C594377001A5BA9 /* SubjectRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968D41C594377001A5BA9 /* SubjectRepositoryProtocol.swift */; };
+		E26968DB1C59529C001A5BA9 /* GetSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968DA1C59529C001A5BA9 /* GetSubject.swift */; };
+		E26968DD1C595373001A5BA9 /* SubjectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968DC1C595373001A5BA9 /* SubjectPresenter.swift */; };
+		E26968DF1C5954C2001A5BA9 /* SubjectPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968DE1C5954C2001A5BA9 /* SubjectPresenterProtocol.swift */; };
+		E26968E11C59575C001A5BA9 /* SubjectUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968E01C59575C001A5BA9 /* SubjectUI.swift */; };
+		E26968E31C595789001A5BA9 /* LoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968E21C595789001A5BA9 /* LoadingUI.swift */; };
+		E26968E51C59581D001A5BA9 /* MessageUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968E41C59581D001A5BA9 /* MessageUI.swift */; };
+		E26968E71C59588A001A5BA9 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968E61C59588A001A5BA9 /* UseCase.swift */; };
+		E26968E91C59593B001A5BA9 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968E81C59593B001A5BA9 /* UI.swift */; };
+		E26968EC1C59603B001A5BA9 /* MockDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968EB1C59603B001A5BA9 /* MockDataSource.swift */; };
+		E26968EE1C59605A001A5BA9 /* MemoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968ED1C59605A001A5BA9 /* MemoryDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +65,24 @@
 		E252E1231C5629690047FD08 /* My First IOS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My First IOS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E252E1271C5629690047FD08 /* My_First_IOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_First_IOS_AppUITests.swift; sourceTree = "<group>"; };
 		E252E1291C5629690047FD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26968BE1C5940F2001A5BA9 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		E26968C21C59419B001A5BA9 /* GetSubjectList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubjectList.swift; sourceTree = "<group>"; };
+		E26968C41C5941AD001A5BA9 /* CreateSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSubject.swift; sourceTree = "<group>"; };
+		E26968C61C5941B3001A5BA9 /* DeleteSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteSubject.swift; sourceTree = "<group>"; };
+		E26968C81C5941BC001A5BA9 /* UpdateSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateSubject.swift; sourceTree = "<group>"; };
+		E26968CA1C5941EA001A5BA9 /* SubjectRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectRepository.swift; sourceTree = "<group>"; };
+		E26968CF1C594264001A5BA9 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
+		E26968D41C594377001A5BA9 /* SubjectRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E26968DA1C59529C001A5BA9 /* GetSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubject.swift; sourceTree = "<group>"; };
+		E26968DC1C595373001A5BA9 /* SubjectPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectPresenter.swift; sourceTree = "<group>"; };
+		E26968DE1C5954C2001A5BA9 /* SubjectPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectPresenterProtocol.swift; sourceTree = "<group>"; };
+		E26968E01C59575C001A5BA9 /* SubjectUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectUI.swift; sourceTree = "<group>"; };
+		E26968E21C595789001A5BA9 /* LoadingUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingUI.swift; sourceTree = "<group>"; };
+		E26968E41C59581D001A5BA9 /* MessageUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageUI.swift; sourceTree = "<group>"; };
+		E26968E61C59588A001A5BA9 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		E26968E81C59593B001A5BA9 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		E26968EB1C59603B001A5BA9 /* MockDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataSource.swift; sourceTree = "<group>"; };
+		E26968ED1C59605A001A5BA9 /* MemoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +133,7 @@
 		E252E1061C5629690047FD08 /* My First IOS App */ = {
 			isa = PBXGroup;
 			children = (
+				E26968BA1C59408D001A5BA9 /* SubjectListApp */,
 				E252E1071C5629690047FD08 /* AppDelegate.swift */,
 				E252E1091C5629690047FD08 /* ViewController.swift */,
 				E252E10B1C5629690047FD08 /* Main.storyboard */,
@@ -123,6 +160,79 @@
 				E252E1291C5629690047FD08 /* Info.plist */,
 			);
 			path = "My First IOS AppUITests";
+			sourceTree = "<group>";
+		};
+		E26968BA1C59408D001A5BA9 /* SubjectListApp */ = {
+			isa = PBXGroup;
+			children = (
+				E26968CC1C594240001A5BA9 /* Respositories */,
+				E26968BD1C5940E0001A5BA9 /* Presenter */,
+				E26968BC1C5940D8001A5BA9 /* View */,
+				E26968BB1C5940D1001A5BA9 /* Model */,
+			);
+			name = SubjectListApp;
+			sourceTree = "<group>";
+		};
+		E26968BB1C5940D1001A5BA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E26968C01C594145001A5BA9 /* UseCase */,
+				E26968BE1C5940F2001A5BA9 /* Subject.swift */,
+				E26968CA1C5941EA001A5BA9 /* SubjectRepository.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E26968BC1C5940D8001A5BA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E26968E01C59575C001A5BA9 /* SubjectUI.swift */,
+				E26968E21C595789001A5BA9 /* LoadingUI.swift */,
+				E26968E41C59581D001A5BA9 /* MessageUI.swift */,
+				E26968E81C59593B001A5BA9 /* UI.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E26968BD1C5940E0001A5BA9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E26968DC1C595373001A5BA9 /* SubjectPresenter.swift */,
+				E26968DE1C5954C2001A5BA9 /* SubjectPresenterProtocol.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		E26968C01C594145001A5BA9 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				E26968C21C59419B001A5BA9 /* GetSubjectList.swift */,
+				E26968C41C5941AD001A5BA9 /* CreateSubject.swift */,
+				E26968C61C5941B3001A5BA9 /* DeleteSubject.swift */,
+				E26968C81C5941BC001A5BA9 /* UpdateSubject.swift */,
+				E26968DA1C59529C001A5BA9 /* GetSubject.swift */,
+				E26968E61C59588A001A5BA9 /* UseCase.swift */,
+			);
+			name = UseCase;
+			sourceTree = "<group>";
+		};
+		E26968CC1C594240001A5BA9 /* Respositories */ = {
+			isa = PBXGroup;
+			children = (
+				E26968EA1C596023001A5BA9 /* Mock */,
+				E26968CF1C594264001A5BA9 /* DataSourceProtocol.swift */,
+				E26968D41C594377001A5BA9 /* SubjectRepositoryProtocol.swift */,
+				E26968ED1C59605A001A5BA9 /* MemoryDataSource.swift */,
+			);
+			name = Respositories;
+			sourceTree = "<group>";
+		};
+		E26968EA1C596023001A5BA9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E26968EB1C59603B001A5BA9 /* MockDataSource.swift */,
+			);
+			name = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +366,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26968BF1C5940F2001A5BA9 /* Subject.swift in Sources */,
+				E26968EC1C59603B001A5BA9 /* MockDataSource.swift in Sources */,
+				E26968DF1C5954C2001A5BA9 /* SubjectPresenterProtocol.swift in Sources */,
+				E26968E11C59575C001A5BA9 /* SubjectUI.swift in Sources */,
+				E26968C71C5941B3001A5BA9 /* DeleteSubject.swift in Sources */,
+				E26968E31C595789001A5BA9 /* LoadingUI.swift in Sources */,
+				E26968D51C594377001A5BA9 /* SubjectRepositoryProtocol.swift in Sources */,
+				E26968CB1C5941EA001A5BA9 /* SubjectRepository.swift in Sources */,
+				E26968E71C59588A001A5BA9 /* UseCase.swift in Sources */,
+				E26968EE1C59605A001A5BA9 /* MemoryDataSource.swift in Sources */,
+				E26968D01C594264001A5BA9 /* DataSourceProtocol.swift in Sources */,
+				E26968DD1C595373001A5BA9 /* SubjectPresenter.swift in Sources */,
 				E252E10A1C5629690047FD08 /* ViewController.swift in Sources */,
+				E26968E91C59593B001A5BA9 /* UI.swift in Sources */,
+				E26968C51C5941AD001A5BA9 /* CreateSubject.swift in Sources */,
+				E26968DB1C59529C001A5BA9 /* GetSubject.swift in Sources */,
 				E252E1081C5629690047FD08 /* AppDelegate.swift in Sources */,
+				E26968E51C59581D001A5BA9 /* MessageUI.swift in Sources */,
+				E26968C91C5941BC001A5BA9 /* UpdateSubject.swift in Sources */,
+				E26968C31C59419B001A5BA9 /* GetSubjectList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +618,7 @@
 				E252E12E1C5629690047FD08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E252E12F1C5629690047FD08 /* Build configuration list for PBXNativeTarget "My First IOS AppTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +627,7 @@
 				E252E1311C5629690047FD08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E252E1321C5629690047FD08 /* Build configuration list for PBXNativeTarget "My First IOS AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +636,7 @@
 				E252E1341C5629690047FD08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

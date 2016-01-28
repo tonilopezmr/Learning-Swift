@@ -12,6 +12,10 @@ class MockDataSource: DataSourceProtocol {
 
     var items: [Int: Subject] = [:]
     
+    init(){
+        self.items = [0: Subject(id: 0, name: "Matematicas"), 1: Subject(id: 1, name: "Lengua"), 2: Subject(id: 2, name: "Carapapas")]
+    }
+    
     func add(item: Subject){
         items[item.id] = item
     }

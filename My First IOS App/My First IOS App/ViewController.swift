@@ -19,19 +19,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var presenter: SubjectPresenter! = nil
     
     override func viewDidLoad() {
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         emptyCaseView.hidden = true
         tableView.accessibilityLabel = "SubjectTableView"
         tableView.accessibilityIdentifier = "SubjectTableView"
         presenter.viewDidLoad()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     @IBAction func onAddButtonClick(sender: UIButton) {
         let subjectName = self.subjectName.text ?? "No subject"
         let subject = Subject(id: items.count, name: subjectName)
         presenter.createSubject(subject)
+        showNewItem(subject)
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,7 +59,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func showLoader() {}
     func hideLoader() {}
     
-    func showMessage(message: String){}
+    func showMessage(message: String){
+        print("Message: \(message)")
+    }
     
     private func emptyCase(items: [Subject]){
         self.emptyCaseView.hidden = items.count > 0
@@ -71,7 +74,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
-        
         cell.textLabel?.text = self.items[indexPath.row].name
         
         return cell

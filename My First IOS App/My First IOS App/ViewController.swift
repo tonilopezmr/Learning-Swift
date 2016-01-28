@@ -9,25 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var button: UIButton!
     
-    @IBOutlet var label: UILabel!
-    
-    @IBAction func onButtonClick(sender: UIButton) {
-        label.text = "I've touch the button"
-    }
+    @IBOutlet var subjectName: UITextField!
+    @IBOutlet var emptyCaseView: UILabel!
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func onAddButtonClick(sender: UIButton) {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

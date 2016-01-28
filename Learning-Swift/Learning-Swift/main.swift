@@ -11,8 +11,8 @@ import Foundation
 //let stringExample = StringExamples()
 //stringExample.example()
 
-//let arrayExample = ArrayExample()
-//arrayExample.example()
+let arrayExample = ArrayExample()
+arrayExample.example()
 
 //let loopingExample = LoopingExample()
 //loopingExample.example()
@@ -33,5 +33,7 @@ import Foundation
 
 //print(5.3.description)
 
-let generics = OperationsExample()
-generics.example()
+//let generics = OperationsExample()
+//generics.example()
+
+

@@ -31,7 +31,6 @@
 		E26968E71C59588A001A5BA9 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968E61C59588A001A5BA9 /* UseCase.swift */; };
 		E26968E91C59593B001A5BA9 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968E81C59593B001A5BA9 /* UI.swift */; };
 		E26968EC1C59603B001A5BA9 /* MockDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968EB1C59603B001A5BA9 /* MockDataSource.swift */; };
-		E26968EE1C59605A001A5BA9 /* MemoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968ED1C59605A001A5BA9 /* MemoryDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +81,6 @@
 		E26968E61C59588A001A5BA9 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		E26968E81C59593B001A5BA9 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		E26968EB1C59603B001A5BA9 /* MockDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataSource.swift; sourceTree = "<group>"; };
-		E26968ED1C59605A001A5BA9 /* MemoryDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +220,6 @@
 				E26968EA1C596023001A5BA9 /* Mock */,
 				E26968CF1C594264001A5BA9 /* DataSourceProtocol.swift */,
 				E26968D41C594377001A5BA9 /* SubjectRepositoryProtocol.swift */,
-				E26968ED1C59605A001A5BA9 /* MemoryDataSource.swift */,
 			);
 			name = Respositories;
 			sourceTree = "<group>";
@@ -375,7 +372,6 @@
 				E26968D51C594377001A5BA9 /* SubjectRepositoryProtocol.swift in Sources */,
 				E26968CB1C5941EA001A5BA9 /* SubjectRepository.swift in Sources */,
 				E26968E71C59588A001A5BA9 /* UseCase.swift in Sources */,
-				E26968EE1C59605A001A5BA9 /* MemoryDataSource.swift in Sources */,
 				E26968D01C594264001A5BA9 /* DataSourceProtocol.swift in Sources */,
 				E26968DD1C595373001A5BA9 /* SubjectPresenter.swift in Sources */,
 				E252E10A1C5629690047FD08 /* ViewController.swift in Sources */,

@@ -22,6 +22,10 @@ class Shape {
     }
 }
 
+func ==(lhs: Shape, rhs: Shape) -> Bool {
+    return lhs.name == rhs.name
+}
+
 class Square: Shape{
     var sideLength: Double
     

@@ -13,19 +13,19 @@ struct SubjectRepository<T: DataSourceProtocol where T.ItemType == Subject>: Sub
     let datasource: T
     
     func add(item: Subject) {
-        datasource.add(<#T##item: Subject##Subject#>)
+        datasource.add(item)
     }
     
     func remove(item: Subject) {
-        datasource.remove(<#T##item: Subject##Subject#>)
+        datasource.remove(item)
     }
 
     func update(item: Subject) {
-        datasource.update(<#T##item: Subject##Subject#>)
+        datasource.update(item)
     }
     
     func get(item: Subject) -> Subject {
-        return datasource.get(<#T##item: Subject##Subject#>)
+        return datasource.get(item)
     }
     
     func getAll() -> [Subject]{

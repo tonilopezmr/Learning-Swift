@@ -21,6 +21,9 @@ class ArrayExample: ExampleProtocol{
         names[2..<4] += ["Marta", "Ana"]
         print(names)
         
+        names = names.filter(){ $0 != "Toni" }
+        print(names)
+        
         print("*** Dictionary examples ****")
         
         var ages = ["Jesus":17, "Angel":21, "Toni":22]

@@ -29,7 +29,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     @IBAction func onAddButtonClick(sender: UIButton) {
-        let subjectName = self.subjectName.text ?? "No subject"
+        var subjectName = self.subjectName.text!
+        if subjectName.isEmpty {
+            subjectName = "No subject"
+        }
         let subject = Subject(id: items.count, name: subjectName)
         presenter.createSubject(subject)
         showNewItem(subject)

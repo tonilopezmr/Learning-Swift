@@ -14,4 +14,5 @@ protocol SubjectPresenterProtocol {
     func viewDidAppear()
     func viewWillDisappear()
     func viewDidDisappear()
+    func onItemClick(item: Subject)
 }

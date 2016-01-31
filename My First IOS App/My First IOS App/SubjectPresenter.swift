@@ -29,6 +29,10 @@ class SubjectPresenter: SubjectPresenterProtocol {
         }
     }
     
+    func onItemClick(item: Subject){
+        deleteSubject(item)
+    }
+    
     func createSubject(subject: Subject){
         useCase.createSubject.execute(subject)
         ui?.showMessage("Subject \(subject.name) has been created")

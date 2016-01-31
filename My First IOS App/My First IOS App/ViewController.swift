@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.accessibilityLabel = "SubjectTableView"
         tableView.accessibilityIdentifier = "SubjectTableView"
         tableView.dataSource = self
+        tableView.delegate = self
         presenter.viewDidLoad()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -85,7 +86,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected cell #\(indexPath.row)!")
+        presenter.onItemClick(Subject(id: indexPath.row, name: self.items[indexPath.row].name))
+        items.removeAtIndex(indexPath.row)
+        tableView.reloadData()
     }
 }
 

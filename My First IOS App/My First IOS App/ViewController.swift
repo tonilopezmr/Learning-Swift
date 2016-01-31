@@ -45,19 +45,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func showEmptyCase(){
-        emptyCaseView.hidden = false
+        self.emptyCaseView.hidden = false
+        self.tableView.hidden = true
     }
     
     func showItems(items: [Subject]) {
         emptyCase(items)
-        self.items = items
+        self.items += items
         tableView.reloadData()
     }
     
     func showNewItem(item: Subject){
-        emptyCase(items)
-        self.items.append(item)
-        tableView.reloadData()
+        showItems([item])
     }
     
     func showLoader() {}
@@ -68,7 +67,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     private func emptyCase(items: [Subject]){
-        self.emptyCaseView.hidden = items.count > 0
+        let hasSubjects = items.count > 0
+        self.emptyCaseView.hidden = hasSubjects
+        self.tableView.hidden = !hasSubjects
     }
     
     //TableView

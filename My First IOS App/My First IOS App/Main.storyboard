@@ -31,30 +31,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="SXq-gQ-Zpu" userLabel="Content View">
-                                <rect key="frame" x="20" y="45" width="560" height="549"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXq-gQ-Zpu" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="45" width="600" height="555"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zpp-nY-5Pw">
-                                        <rect key="frame" x="20" y="10" width="512" height="30"/>
+                                        <rect key="frame" x="20" y="10" width="552" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNM-50-bfc">
-                                        <rect key="frame" x="8" y="50" width="532" height="30"/>
+                                        <rect key="frame" x="8" y="50" width="572" height="30"/>
                                         <state key="normal" title="Add"/>
                                         <connections>
                                             <action selector="onAddButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DI0-As-xTL"/>
                                         </connections>
                                     </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-wy-ZYb">
+                                        <rect key="frame" x="0.0" y="80" width="600" height="475"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No subjects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srd-IW-x6G">
                                         <rect key="frame" x="1" y="280" width="317" height="31"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-wy-ZYb">
-                                        <rect key="frame" x="0.0" y="80" width="560" height="469"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -73,10 +73,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SXq-gQ-Zpu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="DgS-mg-49W"/>
-                            <constraint firstItem="SXq-gQ-Zpu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gmb-NW-Nf7"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SXq-gQ-Zpu" secondAttribute="bottom" constant="6" id="aUp-as-Udw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SXq-gQ-Zpu" secondAttribute="trailing" id="lum-lT-WFK"/>
+                            <constraint firstAttribute="left" secondItem="SXq-gQ-Zpu" secondAttribute="left" id="8fx-mE-Zdh"/>
+                            <constraint firstItem="SXq-gQ-Zpu" firstAttribute="right" secondItem="8bC-Xf-vdC" secondAttribute="right" id="A5H-KU-o8I" userLabel="right = Content View.right"/>
+                            <constraint firstItem="SXq-gQ-Zpu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="DGF-fS-5GX" userLabel="Content View.top = 25"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SXq-gQ-Zpu" secondAttribute="bottom" id="XsK-cK-cwO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76.875" y="352.81690140845069"/>
+            <point key="canvasLocation" x="-77" y="352"/>
         </scene>
     </scenes>
 </document>

@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         emptyCaseView.hidden = true
         tableView.accessibilityLabel = "SubjectTableView"
         tableView.accessibilityIdentifier = "SubjectTableView"
+        tableView.dataSource = self
         presenter.viewDidLoad()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

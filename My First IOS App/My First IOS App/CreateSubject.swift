@@ -15,7 +15,8 @@ class CreateSubject {
         self.repository = repository
     }
     
-    func execute(subject: Subject){
-        repository.add(subject)
+    func execute(subject: Subject, completion: (Subject) -> ()){
+        let subjectEntity = repository.add(subject)
+        completion(subjectEntity)
     }
 }

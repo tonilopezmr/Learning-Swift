@@ -49,6 +49,32 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERx-wy-ZYb">
                                         <rect key="frame" x="0.0" y="80" width="600" height="475"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="subjectcell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubjectCellIdentifier" id="wV1-Fb-sye" customClass="SubjectTableViewCell" customModule="My_First_IOS_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wV1-Fb-sye" id="ZkP-Ur-KYS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-7G-OeH">
+                                                            <rect key="frame" x="23" y="8" width="42" height="27.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="n2e-7G-OeH" firstAttribute="leading" secondItem="ZkP-Ur-KYS" secondAttribute="leadingMargin" constant="15" id="KD8-gr-pe3"/>
+                                                        <constraint firstItem="n2e-7G-OeH" firstAttribute="top" secondItem="ZkP-Ur-KYS" secondAttribute="topMargin" id="YeB-CY-2zC"/>
+                                                        <constraint firstItem="n2e-7G-OeH" firstAttribute="bottom" secondItem="ZkP-Ur-KYS" secondAttribute="bottomMargin" id="sRU-0x-XL3"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="subjectName" destination="n2e-7G-OeH" id="8dq-hR-LxL"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No subjects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srd-IW-x6G">
                                         <rect key="frame" x="1" y="280" width="317" height="31"/>

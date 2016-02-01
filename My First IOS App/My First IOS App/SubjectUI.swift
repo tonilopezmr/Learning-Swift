@@ -11,5 +11,6 @@ import Foundation
 protocol SubjectUI: UI, LoadingUI, MessageUI {
     func showEmptyCase()
     func showItems(items: [Subject])
-    func showNewItem(item: Subject)   
+    func showNewItem(item: Subject)
+    func deleteItem(item: Subject)
 }

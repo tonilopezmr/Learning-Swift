@@ -13,6 +13,9 @@
 		E252E1121C5629690047FD08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E252E1101C5629690047FD08 /* LaunchScreen.storyboard */; };
 		E252E11D1C5629690047FD08 /* My_First_IOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252E11C1C5629690047FD08 /* My_First_IOS_AppTests.swift */; };
 		E252E1281C5629690047FD08 /* My_First_IOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E252E1271C5629690047FD08 /* My_First_IOS_AppUITests.swift */; };
+		E257EFFB1C5F7C5B00DBBD2F /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257EFFA1C5F7C5B00DBBD2F /* SubjectTableViewCell.swift */; };
+		E257EFFD1C5F88D400DBBD2F /* SubjectTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257EFFC1C5F88D400DBBD2F /* SubjectTableViewDataSource.swift */; };
+		E257EFFF1C5F903300DBBD2F /* SubjectTableViewNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E257EFFE1C5F903300DBBD2F /* SubjectTableViewNavigationDelegate.swift */; };
 		E26968BF1C5940F2001A5BA9 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968BE1C5940F2001A5BA9 /* Subject.swift */; };
 		E26968C31C59419B001A5BA9 /* GetSubjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968C21C59419B001A5BA9 /* GetSubjectList.swift */; };
 		E26968C51C5941AD001A5BA9 /* CreateSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26968C41C5941AD001A5BA9 /* CreateSubject.swift */; };
@@ -64,6 +67,9 @@
 		E252E1231C5629690047FD08 /* My First IOS AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My First IOS AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E252E1271C5629690047FD08 /* My_First_IOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_First_IOS_AppUITests.swift; sourceTree = "<group>"; };
 		E252E1291C5629690047FD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E257EFFA1C5F7C5B00DBBD2F /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		E257EFFC1C5F88D400DBBD2F /* SubjectTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableViewDataSource.swift; sourceTree = "<group>"; };
+		E257EFFE1C5F903300DBBD2F /* SubjectTableViewNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableViewNavigationDelegate.swift; sourceTree = "<group>"; };
 		E26968BE1C5940F2001A5BA9 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		E26968C21C59419B001A5BA9 /* GetSubjectList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubjectList.swift; sourceTree = "<group>"; };
 		E26968C41C5941AD001A5BA9 /* CreateSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSubject.swift; sourceTree = "<group>"; };
@@ -239,6 +245,9 @@
 		E2A521851C5A3CB100168DAC /* Table View */ = {
 			isa = PBXGroup;
 			children = (
+				E257EFFA1C5F7C5B00DBBD2F /* SubjectTableViewCell.swift */,
+				E257EFFC1C5F88D400DBBD2F /* SubjectTableViewDataSource.swift */,
+				E257EFFE1C5F903300DBBD2F /* SubjectTableViewNavigationDelegate.swift */,
 			);
 			name = "Table View";
 			sourceTree = "<group>";
@@ -384,9 +393,12 @@
 				E26968CB1C5941EA001A5BA9 /* SubjectRepository.swift in Sources */,
 				E26968E71C59588A001A5BA9 /* UseCase.swift in Sources */,
 				E26968D01C594264001A5BA9 /* DataSourceProtocol.swift in Sources */,
+				E257EFFB1C5F7C5B00DBBD2F /* SubjectTableViewCell.swift in Sources */,
 				E26968DD1C595373001A5BA9 /* SubjectPresenter.swift in Sources */,
 				E252E10A1C5629690047FD08 /* ViewController.swift in Sources */,
 				E26968E91C59593B001A5BA9 /* UI.swift in Sources */,
+				E257EFFD1C5F88D400DBBD2F /* SubjectTableViewDataSource.swift in Sources */,
+				E257EFFF1C5F903300DBBD2F /* SubjectTableViewNavigationDelegate.swift in Sources */,
 				E26968C51C5941AD001A5BA9 /* CreateSubject.swift in Sources */,
 				E26968DB1C59529C001A5BA9 /* GetSubject.swift in Sources */,
 				E252E1081C5629690047FD08 /* AppDelegate.swift in Sources */,

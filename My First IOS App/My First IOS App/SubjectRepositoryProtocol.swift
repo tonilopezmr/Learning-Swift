@@ -9,7 +9,7 @@
 import Foundation
 
 protocol SubjectRespositoryProtocol {
-    func add(item: Subject)
+    func add(item: Subject) -> Subject
     func remove(item: Subject)
     func update(item: Subject)
     func get(item: Subject) -> Subject

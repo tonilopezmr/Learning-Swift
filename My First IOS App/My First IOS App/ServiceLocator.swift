@@ -33,6 +33,10 @@ class ServiceLocator {
         return SubjectPresenter(ui: ui, useCase: provideUseCases())
     }
     
+    private func provideSubjectDataSource() -> SubjectTableViewDataSource {
+        return SubjectTableViewDataSource()
+    }
+    
     private func provideStoryBoard() -> UIStoryboard{
         return UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
     }
@@ -47,7 +51,11 @@ class ServiceLocator {
     func provideSubjectController() -> UIViewController {
         let uiStoryBoard = provideStoryBoard()
         let subjectViewController: ViewController = uiStoryBoard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-        subjectViewController.presenter = provideSubjectPresenter(subjectViewController)
+        let presenter = provideSubjectPresenter(subjectViewController)
+        let dataSource = provideSubjectDataSource()
+        subjectViewController.presenter = presenter
+        subjectViewController.dataSource = dataSource
+        subjectViewController.delegate = SubjectTableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
         return subjectViewController
     }
     

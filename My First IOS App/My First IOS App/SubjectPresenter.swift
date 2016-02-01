@@ -19,6 +19,10 @@ class SubjectPresenter: SubjectPresenterProtocol {
     
     func viewDidLoad(){
         ui?.showLoader()
+        getSubjects()
+    }
+    
+    private func getSubjects(){
         useCase.getSubjectList.execute { subjects in
             self.ui?.hideLoader()
             if subjects.isEmpty {
@@ -34,12 +38,16 @@ class SubjectPresenter: SubjectPresenterProtocol {
     }
     
     func createSubject(subject: Subject){
-        useCase.createSubject.execute(subject)
-        ui?.showMessage("Subject \(subject.name) has been created")
+        useCase.createSubject.execute(subject, completion: {
+            subjectEntity in
+            self.ui?.showNewItem(subjectEntity)
+            self.ui?.showMessage("Subject \(subjectEntity.name) has been created")
+        })
     }
     
     func deleteSubject(subject: Subject){
         useCase.deleteSubject.execute(subject)
+        ui?.deleteItem(subject)
         ui?.showMessage("Subject \(subject.name) has been deleted")
     }
     

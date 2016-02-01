@@ -8,23 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SubjectUI {
-    
-    var items: [Subject] = []
+class ViewController: UIViewController, SubjectUI {
     
     @IBOutlet var subjectName: UITextField!
     @IBOutlet var emptyCaseView: UILabel!
     @IBOutlet var tableView: UITableView!
     
     var presenter: SubjectPresenter! = nil
+
+    var dataSource: SubjectTableViewDataSource!
+    var delegate: UITableViewDelegate!
     
     override func viewDidLoad() {
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         emptyCaseView.hidden = true
         tableView.accessibilityLabel = "SubjectTableView"
         tableView.accessibilityIdentifier = "SubjectTableView"
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.dataSource = dataSource
+        tableView.delegate = delegate
         presenter.viewDidLoad()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,9 +36,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if subjectName.isEmpty {
             subjectName = "No subject"
         }
-        let subject = Subject(id: items.count, name: subjectName)
+        let subject = Subject(id: dataSource.items.count, name: subjectName)
         presenter.createSubject(subject)
-        showNewItem(subject)
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,12 +52,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func showItems(items: [Subject]) {
         emptyCase(items)
-        self.items += items
+        dataSource.items = items
         tableView.reloadData()
     }
     
     func showNewItem(item: Subject){
-        showItems([item])
+        emptyCase([item])
+        dataSource.items += [item]
+        tableView.reloadData()
+    }
+    
+    func deleteItem(item: Subject){
+        emptyCase(dataSource.items)
+        tableView.reloadData()
     }
     
     func showLoader() {}
@@ -71,24 +78,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let hasSubjects = items.count > 0
         self.emptyCaseView.hidden = hasSubjects
         self.tableView.hidden = !hasSubjects
-    }
-    
-    //TableView
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
-        cell.textLabel?.text = self.items[indexPath.row].name
-        
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        presenter.onItemClick(Subject(id: indexPath.row, name: self.items[indexPath.row].name))
-        items.removeAtIndex(indexPath.row)
-        tableView.reloadData()
     }
 }
 

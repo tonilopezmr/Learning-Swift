@@ -16,8 +16,23 @@ class MockDataSource: DataSourceProtocol {
        // self.items = [0: Subject(id: 0, name: "Matematicas"), 1: Subject(id: 1, name: "Lengua"), 2: Subject(id: 2, name: "Carapapas")]
     }
     
-    func add(item: Subject){
-        items[item.id] = item
+    func add(item: Subject) -> Subject{
+        let newItem: Subject = Subject(id: getNewId(), name: item.name)
+        items[newItem.id] = newItem
+        return newItem
+    }
+    
+    private func getNewId() -> Int{
+        var id: Int = -1
+        
+        for(var i = 0; i < items.keys.count; i++){
+            if !items.keys.contains(i) {
+                id = i
+                break
+            }
+        }
+        
+        return id
     }
     
     func remove(item: Subject){

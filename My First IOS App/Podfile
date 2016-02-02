@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'RealmSwift'
+
+target 'My First IOS AppTests' do
+    pod 'Nimble'
+    pod 'KIF', '~> 3.0', :configurations => ['Debug']
+end
+

@@ -11,8 +11,8 @@ import UIKit
 
 class ServiceLocator {
     
-    private func provideDataSource() -> MockDataSource{
-        return MockDataSource()
+    private func provideDataSource() -> SQLiteDataSource{
+        return SQLiteDataSource()
     }
     
     private func provideSubjectRepository() -> SubjectRespositoryProtocol {

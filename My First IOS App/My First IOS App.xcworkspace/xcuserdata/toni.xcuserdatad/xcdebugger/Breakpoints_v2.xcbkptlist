@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My First IOS App/SubjectEntity.swift"
+            timestampString = "476118611.894714"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "SubjectEntity"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_First_IOS_App.SubjectEntity.init (My_First_IOS_App.SubjectEntity.Type)() -&gt; My_First_IOS_App.SubjectEntity"
+                  moduleName = "My First IOS App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toni/Documents/Trabajos/swift/My%20First%20IOS%20App/My%20First%20IOS%20App/SubjectEntity.swift"
+                  timestampString = "476122125.395129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_First_IOS_App.SubjectEntity.init (My_First_IOS_App.SubjectEntity.Type)(value : Swift.AnyObject) -&gt; My_First_IOS_App.SubjectEntity"
+                  moduleName = "My First IOS App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toni/Documents/Trabajos/swift/My%20First%20IOS%20App/My%20First%20IOS%20App/SubjectEntity.swift"
+                  timestampString = "476122125.395437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_First_IOS_App.SubjectEntity.init (My_First_IOS_App.SubjectEntity.Type)(realm : __ObjC.RLMRealm, schema : __ObjC.RLMObjectSchema) -&gt; My_First_IOS_App.SubjectEntity"
+                  moduleName = "My First IOS App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toni/Documents/Trabajos/swift/My%20First%20IOS%20App/My%20First%20IOS%20App/SubjectEntity.swift"
+                  timestampString = "476122125.395625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_First_IOS_App.SubjectEntity.init (My_First_IOS_App.SubjectEntity.Type)(value : Swift.AnyObject, schema : __ObjC.RLMSchema) -&gt; My_First_IOS_App.SubjectEntity"
+                  moduleName = "My First IOS App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/toni/Documents/Trabajos/swift/My%20First%20IOS%20App/My%20First%20IOS%20App/SubjectEntity.swift"
+                  timestampString = "476122125.39575"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "37">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My First IOS App/SQLiteDataSource.swift"
+            timestampString = "476122124.323416"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "add(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My First IOS App/SQLiteDataSource.swift"
+            timestampString = "476122674.03071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "remove(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

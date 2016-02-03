@@ -26,7 +26,7 @@ class SQLiteDataSource: DataSourceProtocol {
         return transform(subject)
     }
     
-    func getNewId(realm: Realm) -> Int{
+    private func getNewId(realm: Realm) -> Int{
         let query = realm.objects(SubjectEntity)
         if query.count > 0 {
             return query.max("id")! + 1

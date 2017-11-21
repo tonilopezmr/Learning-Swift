@@ -87,3 +87,29 @@ class FunctionExample: ExampleProtocol{
         return list
     }
 }
+
+func closures() {
+    print("Closures")
+    
+    func add(a: Int, b: Int) -> Int {
+        return a + b
+    }
+    
+    func mult(a: Int, b: Int) -> Int {
+        return a + b
+    }
+    
+    func op(op: (Int, Int) -> Int) -> Int {
+        return op(2, 2)
+    }
+    
+    let result = op(add)
+    
+    print("Operation over a: 2 b: 2 = \(result)")
+    
+    let other = op({ (a: Int, b: Int) -> Int in
+        return a - b
+    })
+    
+    print("Operation over a closure a: 2 b: 2 = \(other)")
+}

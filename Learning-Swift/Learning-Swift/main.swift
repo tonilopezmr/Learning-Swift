@@ -11,8 +11,11 @@ import Foundation
 //let stringExample = StringExamples()
 //stringExample.example()
 
-let arrayExample = ArrayExample()
-arrayExample.example()
+//collections()
+closures()
+
+//let arrayExample = ArrayExample()
+//arrayExample.example()
 
 //let loopingExample = LoopingExample()
 //loopingExample.example()

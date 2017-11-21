@@ -9,7 +9,7 @@
 import Foundation
 
 protocol DataSourceProtocol {
-    typealias ItemType
+    associatedtype ItemType
     func add(item: ItemType) -> ItemType
     func remove(item: ItemType)
     func update(item: ItemType)

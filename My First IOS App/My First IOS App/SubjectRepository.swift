@@ -8,9 +8,13 @@
 
 import Foundation
 
-struct SubjectRepository<T: DataSourceProtocol where T.ItemType == Subject>: SubjectRespositoryProtocol {
+class SubjectRepository<T: DataSourceProtocol where T.ItemType == Subject>: SubjectRespositoryProtocol {
     
     let datasource: T
+    
+    init(datasource2: T){
+        datasource = datasource2
+    }
     
     func add(item: Subject) ->Subject{
         return datasource.add(item)

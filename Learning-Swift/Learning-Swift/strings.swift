@@ -8,8 +8,8 @@
 
 import Foundation
 
-class StringExamples: ExampleProtocol{
-    func example(){    
+class StringExamples: ExampleProtocol {
+    func example() {    
         print("Hello, World!")
         
         //Fundamentals, variables and String
@@ -28,5 +28,8 @@ class StringExamples: ExampleProtocol{
         let today: String = "January 10th, 2016"
         let output: String = "I'm learning about swift \(today)"
         print(output)
+        
+        print("hola buenos dias que tal estais".capitalizedString)
+    
     }
 }
